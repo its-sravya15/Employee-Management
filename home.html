@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Employee Management System</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            min-height: 65vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero h1 span {
+            display: block;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        /* Buttons */
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .view-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .view-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .add-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .add-btn:hover {
+            background-color: #1e7e34;
+        }
+
+        /* About Section */
+
+        .about {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px 20px 70px;
+        }
+
+        .about h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .about p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .btn {
+                display: block;
+                width: 200px;
+                margin: 10px auto;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Welcome to
+                <span>Employee Management System</span>
+            </h1>
+
+            <p>
+                A simple and efficient platform to manage employee
+                information, view employee records and keep everything
+                organized in one place.
+            </p>
+
+            <a href="/employees" class="btn view-btn">
+                View Employees
+            </a>
+
+            <a href="/addemployee" class="btn add-btn">
+                Add Employee
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about">
+
+        <h2>Manage Your Employees Easily</h2>
+
+        <p>
+            Our Employee Management System helps you store and manage
+            employee details such as name, email, department and phone
+            number. You can easily add new employees and view existing
+            employee information.
+        </p>
+
+    </section>
+
+</body>
+</html>

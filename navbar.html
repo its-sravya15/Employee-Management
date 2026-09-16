@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }   
+        body{
+            font-family:Arial,sans-serif;
+        }
+        /*Navbar*/
+        .navbar{
+            background-color: #222;
+            padding:15px30px;
+            display:flex;
+            align-items:center;
+        }
+        /*Navigation links*/
+        .nav-links{
+            display:flex;
+            align-items:center;
+            list-style:none;
+            gap:20px;
+        }
+        .nav-links a:hover{
+            color:#00bcd4;
+        }
+        /*login button*/
+        .login-btn{
+            border:1px solid #00bcd4;
+            padding:8px 15px;
+            border-radius:5px;
+        }
+        .login-btn:hover{
+            background-color:#00bcd4;
+            color: white !important;
+        }
+        /*Register button*/
+        .register-btn{
+            background-color:#00bcd4;
+            padding:8px 15px;
+            border-radius:5px;
+        }
+        .register-btn:hover{
+            background-color:#0097a7;
+            color:white !important;
+        }
+        /*content*/
+        .content{
+            padding:50px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          Employee Management System
+        </div>
+        <ul class="nav-links">
+           <li>
+               <a href="home.html">Home</a>
+           </li>
+           <li>
+            <a href="employees.html">employee </a>
+            </li>
+            <li>
+            <a href="addemployee.html">add employee</a>
+             </li>
+              <li>
+            <a href="search.html">search</a>
+             </li>
+            
+             <li>
+                <a href="login.html">login</a>
+            </li>
+             <li>
+                <a href="reglogin.html">register</a>
+            </li>
+       </ul>
+
+    </nav>
+    <div class="content">
+        <h1>Welcome To  Employee Management System</h1>
+        <p>Manage your employee easily</p>
+    </div>
+    
+</body>
+</html>
