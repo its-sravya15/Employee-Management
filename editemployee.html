@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+</head>
+<body>
+    <h1>Edit Employee</h1>
+    <form action="/editemployee" method="post">
+        <label>Name:</label>
+        <input type="text" name="fullname" value="{{employee[fullname]}}" placeholder="Enter employee name" required>
+        <label>Email:</label>
+        <input type="email" name="email"  value="{{employee[email]}}" placeholder="Enter employee email" required>
+        <label>Department:</label>
+        <select name="department"  value="{{[employee[department]}}" required>
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+        <label>phone:</label>
+        <input type="text" name="phone" value="{{[employee[phone]}}" placeholder="enter phone number" required>
+        <button type="submit">Add employee</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html>

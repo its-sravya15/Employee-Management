@@ -52,6 +52,15 @@
             <td>{{employee[2]}}</td>
             <td>{{employee[3]}}</td>
             <td>{{employee[4]}}</td>
+            <td>
+                <a href="/edit/{{ employee[0] }}" class="edit-btn">
+                    Edit
+                </a>
+                <a href="/delete/{{ employee[0] }}" 
+                class="delete-btn">
+                    Delete
+                </a>
+            </td>
         </tr>
         {% endfor %}
     </table>
